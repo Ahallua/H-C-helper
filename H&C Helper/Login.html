@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login</title>
+</head>
+<style>
+body{
+  background: black;
+  user-select: none;
+}
+  h3{
+    text-align: center;
+    font-size: 23px;
+    color: white;
+    font-weight: bolder;
+   text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: white;
+        text-shadow: 0px 0px 3px white;
+
+    animation: c 5s infinite;
+  }
+  @keyframes c{
+    0%{
+          text-shadow: 0px 0px 5px white;
+
+    }
+    20%{
+          text-shadow: 0px 0px 10px white;
+
+    }
+    60%{
+          text-shadow: 0px 0px 3px white;
+
+    }
+    100%{
+          text-shadow: 0px 0px 13px white;
+
+    }
+  }
+  .box{
+    height: 480px;
+    width: 315px;
+    background: rgba(255, 255, 255, 1);
+    position: absolute;
+    left: 25px;
+    top: 100px;
+    border-radius: 5%;
+        animation: a 5s infinite;
+        animation-timing-function: steps(4);
+                  box-shadow: 0px 0px 5px  2px white;
+
+
+  }
+    @keyframes a{
+    0%{
+          box-shadow: 0px 0px 7px 4px white;
+
+    }
+    20%{
+          text-shadow: 0px 0px 10px 5px white;
+
+    }
+    60%{
+          text-shadow: 0px 0px 3px 2px white;
+
+    }
+    100%{
+          text-shadow: 0px 0px 7px 7px white;
+
+    }
+  }
+  h5{
+    font-weight: bolder;
+    font-size: 20px;
+    position: relative;
+    top: -27px;
+    left: 8px;
+  }
+  p{
+    font-size: 17px;
+    color: grey;
+    position: relative;
+    top: -65px;
+    left: 6px;
+  }
+  hr{
+    position: relative;
+    top: -58px;
+  }
+  input[type="text"]{
+    position: relative;
+    top: -75px;
+    left: 13px;
+    height: 20px;
+    width: 280px;
+    border: inset 2px grey;
+  }
+  input{
+    user-select: ;
+  }
+  p:nth-child(5){
+    color: grey;
+    position: relative;
+    top: -78px;
+  }
+  input[type="email"] {
+    position: relative;
+    top: -84px;
+    left: 13px;
+    height: 20px;
+    width: 280px;
+    border: inset 2px grey;
+  }
+  p:nth-child(7) {
+    color: grey;
+    position: relative;
+    top: -85px;
+  }
+  input[type="password"] {
+    position: relative;
+    top: -90px;
+    left: 13px;
+    height: 20px;
+    width: 280px;
+    border: inset 2px grey;
+  }
+  p:nth-child(9) {
+    color: grey;
+    position: relative;
+    top: -93px;
+  }
+  input:nth-child(10){
+    position: relative;
+    top: -95px;
+    left: 13px;
+    height: 20px;
+    width: 280px;
+    border: inset 2px grey;
+  }
+  p:nth-child(11) {
+    color: grey;
+    position: relative;
+    top: -96px;
+  }
+  label:nth-child(12) {
+    color: grey;
+    position: relative;
+    top: -100px;
+    left: 15px;
+  }
+  input:nth-child(13) {
+    color: grey;
+    position: relative;
+    top: -97px;
+    left: 10px;
+  }
+  label:nth-child(14) {
+    color: grey;
+    position: relative;
+    top: -100px;
+    left: 24px;
+  }
+  input:nth-child(15) {
+    color: grey;
+    position: relative;
+    top: -97px;
+    left: 19px;
+  }
+  button{
+    color: white;
+    background: blue;
+    border: hidden;
+    padding: 5px;
+    font-weight: bolder;
+    font-size: 18px;
+    width: 80px;
+    height: 40px;
+    border-radius: 12%;
+    box-shadow: 0px 0px 4px 1px blue;
+    position: relative;
+    top: -30px;
+    left: 76px;
+  }
+  button:hover{
+    background: rgba(0, 21, 255, 0.7);
+  }
+ .bu{
+    color: white;
+    background: rgba(66, 68, 90, 0.5);
+    border: hidden;
+    padding: 5px;
+    text-decoration:;
+    font-weight: bolder;
+    font-size: 18px;
+    width: 80px;
+    height: 40px;
+    border-radius: 12%;
+    box-shadow: 0px 0px 4px 1px #9798A1;
+    position: relative;
+    top: -70px;
+    left: 120px;
+  }
+  .bu:hover{
+    background: rgba(66, 68, 90, 0.7);
+  }
+  @media(min-width: 361px){
+    .total{
+      position: absolute;
+      left: 198px;
+      top: -10px;
+    }
+  }
+</style>
+<body>
+<h3>H&C Helper</h3>
+  <div class="total">
+<div class="box">
+  <form action="index.html">
+  <h5>Login</h5>
+  <hr>
+  <p>Name:</p>
+  <input type="text" required>
+  <p>E-mail address:</p>
+  <input type="email" required>
+  <p>Password:</p>
+  <input type="password" required>
+  <p>Confirm Password:</p>
+  <input type="password" required>
+  <p>Gender:</p>
+ <label for="male">Male</label> <input type="radio" name="male" id="male">
+ <label for="malef">Female</label> <input type="radio" name="male" id="malef">
+ <button type="submit">Login</button>
+ <a href="plus.html"><button type="button" class="bu">Cancel</button></a>
+</form>
+</div>
+</div>
+</body>
+</html>
